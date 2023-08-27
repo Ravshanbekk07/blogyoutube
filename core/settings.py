@@ -40,6 +40,11 @@ INSTALLED_APPS = [
     'rest_framework',
     'blog.apps.BlogConfig'
 ]
+REST_FRAMEWORK={
+    'DEFAULF_PERMISSION_CLASSES':[
+        'rest_framework.permissions.AllowAny'
+    ]
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
