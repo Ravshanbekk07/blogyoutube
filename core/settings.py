@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig'
 ]
 REST_FRAMEWORK={
-    'DEFAULF_PERMISSION_CLASSES':[
-        'rest_framework.permissions.AllowAny'
+    'DEFAULT_PERMISSION_CLASSES':[
+        'rest_framework.permissions.IsAuthenticated',
     ]
 }
 
